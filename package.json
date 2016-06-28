@@ -1,0 +1,26 @@
+{
+  "name": "mongo-shopping-list",
+  "version": "0.0.0",
+  "description": "mongoose shopping list",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "mongoose",
+    "shopping",
+    "list"
+  ],
+  "author": "Daniel",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.5.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^2.5.3"
+  }
+}
