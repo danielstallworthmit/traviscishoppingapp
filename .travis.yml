@@ -4,7 +4,14 @@ services:
 - mongodb
 addons:
   apt:
-   sources:
-   - mongodb-3.2-precise
-   packages:
-   - mongodb-org-server
+    sources:
+    - mongodb-3.2-precise
+    packages:
+    - mongodb-org-server
+deploy:
+  provider: heroku
+  api_key:
+    secure: QTzt0v/REMR/vp/f26kRtt7cXqT2X/n6P2j8cdnWpIgPRBp3IuRJD90+bM6jl1ZiOpvyuc9fkaYJJh6x1BtwrgJm2N8ynzG+dtMT+QTvgk2pg70WQvTO99vOQOwI9vWlnNB1V6TfSl+L/lA0yfzx5iE3VMN+R2JtQglbgYunqEynjSDVa7lp2KWd2uo+ZuciV5U3jv/RKt1dpQc3CjDeWsdVxDMLg2X0KCM+XbvYone8IwXz6bOABxXEfQO6zt4VgaScgQOt6+yhsrUi+AHy7rOXCiq4OS+e9+9aFhV06M0+5ERDMG9d9ZqKoFbD5960u5DS9+CZSpdTCzL+f0yNwswI6LeOD6APDtumS/jX+ATmwMI4N58mD7cgjX/hSXXXKXv5niwoU1poy/qNb9rIfaUIwZlNxUmnG/QYGFMYUE1xxScVH3N+gBHeRTgj4dSr+3t5Ksh0y/axkdXs8ZiEWt7jl+mS679TaUg5+LIYVkWAnD0aFhdDuIlx357HUZAsdGL+bEr7nf7jJhalhm3BmJ/wkva/473Tj1Rh+AgwHkWFm/k6CtYwM7u0bDpwIvu4wCpVCd4k8yBLCbjqEu0QrqNlwhCO+/hLlNVqjdp8EblUervz4TcCuKK7cQGo2BQJDsFza/Efx4HT0EYXABFlaFon7j+831+eQi4IpEu1jTo=
+  app: mongoshoppinglistdaniel
+  on:
+    repo: danielstallworthmit/traviscishoppingapp
