@@ -56,13 +56,13 @@ describe('Shopping List', function() {
 		chai.request(app).get('/items')
 			.end(function(err, res) {
 				res.body.should.be.a('array');
-				res.body.length.should.equal(5);
-				res.body[4].should.be.a('object');
-				res.body[4].should.have.property('_id');
-				res.body[4].should.have.property('name');
-				res.body[4]._id.should.be.a('string');
-				res.body[4].name.should.equal('Kale');
-				res.body[4].name.should.be.a('string');
+				res.body.length.should.equal(4);
+				res.body[3].should.be.a('object');
+				res.body[3].should.have.property('_id');
+				res.body[3].should.have.property('name');
+				res.body[3]._id.should.be.a('string');
+				res.body[3].name.should.equal('Kale');
+				res.body[3].name.should.be.a('string');
 				done();
 			});
 	});
@@ -84,13 +84,13 @@ describe('Shopping List', function() {
 		chai.request(app).get('/items')
 			.end(function(err, res) {
 				res.body.should.be.a('array');
-				res.body.length.should.equal(5);
-				res.body[4].should.be.a('object');
-				res.body[4].should.have.property('_id');
-				res.body[4].should.have.property('name');
-				res.body[4]._id.should.be.a('string');
-				res.body[4].name.should.equal('Extra Healthy Kale');
-				res.body[4].name.should.be.a('string');
+				res.body.length.should.equal(4);
+				res.body[3].should.be.a('object');
+				res.body[3].should.have.property('_id');
+				res.body[3].should.have.property('name');
+				res.body[3]._id.should.be.a('string');
+				res.body[3].name.should.equal('Extra Healthy Kale');
+				res.body[3].name.should.be.a('string');
 				done();
 			});
 
@@ -144,13 +144,13 @@ describe('Shopping List', function() {
 		chai.request(app).get('/items')
 			.end(function(err, res) {
 				res.body.should.be.a('array');
-				res.body.length.should.equal(5);
-				res.body[4].should.be.a('object');
-				res.body[4].should.have.property('_id');
-				res.body[4].should.have.property('name');
-				res.body[4]._id.should.be.a('string');
-				res.body[4].name.should.equal('Kale');
-				res.body[4].name.should.be.a('string');
+				res.body.length.should.equal(4);
+				res.body[3].should.be.a('object');
+				res.body[3].should.have.property('_id');
+				res.body[3].should.have.property('name');
+				res.body[3]._id.should.be.a('string');
+				res.body[3].name.should.equal('Kale');
+				res.body[3].name.should.be.a('string');
 				done();
 			});
 
